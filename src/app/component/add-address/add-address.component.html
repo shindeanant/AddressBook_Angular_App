@@ -1,0 +1,109 @@
+<app-header></app-header>
+<div class="form-content">
+  <form class="form" [formGroup]="signupForm" (ngSubmit)="PostData(signupForm)">
+    <!--Form Header-->
+    <div class="form-head">
+      <span class="head">PERSON ADDRESS FORM</span>
+
+      <!--Cancel Button-->
+      <a routerLink="/">
+        <img
+          src="../assets/cancel.jpeg"
+          alt=""
+          width="3%"
+          id="cancel-icon"
+          class="close"
+          style="float: right"
+        />
+      </a>
+    </div>
+
+    <!--Name Content with error details-->
+    <div class="column-content">
+      <div class="label text" for="name">Full Name</div>
+      <input
+        class="input"
+        type="text "
+        formControlName="name"
+        id="name"
+        placeholder="Your Full Name"
+        required
+        name="name"
+      />
+    </div>
+    <br>
+    <!--Phone Number Content with error details-->
+    <div class="column-content-style">
+      <div class="label text" for="phone">Phone Number</div>
+      <br />
+      <input
+        class="input"
+        formControlName="phone"
+        type="number"
+        id="phone"
+        name="phone"
+      />
+    </div>
+    <br>
+
+    <!--Address Content with error details-->
+    <div class="column-content-style">
+      <div class="label text" for="address">Address</div>
+      <textarea
+        class="input"
+        id="address"
+        formControlName="address"
+        type="text"
+        name="address"
+      ></textarea>
+    </div>
+    <br>
+
+    <div class="row-content-address">
+      <div class="row-content">
+        <div class="label text" for="city">City</div>
+        <select class="input" formControlName="city" id="city" name="city">
+          <option disabled>Select City</option>
+          <option *ngFor="let city of City" [value]="city">{{ city }}</option>
+        </select>
+      </div>
+
+      <div class="row-content">
+        <div class="label text" for="state">State</div>
+        <select class="input" formControlName="state" id="state" name="state">
+          <option disabled>Select State</option>
+          <option *ngFor="let state of State" [value]="state">
+            {{ state }}
+          </option>
+        </select>
+      </div>
+      <!--Zip Content with error details-->
+      <div class="row-content">
+        <div class="label text" for="zip">Zip Code</div>
+        <input
+          class="input"
+          formControlName="zip"
+          id="zip"
+          type="number"
+          name="zip"
+        />
+      </div>
+    </div>
+    <br>
+    <!--Buttons: Add and Edit buttons based on the url page opened-->
+    <div class="add-reset">
+      <button
+        type="submit"
+        class="addButton button"
+        id="addButton"
+        routerLink="/dashboard"
+        (click)="addNewContact()"
+      >
+        Add
+      </button>
+      <button type="reset" class="resetButton button" id="restButton">
+        Reset
+      </button>
+    </div>
+  </form>
+</div>

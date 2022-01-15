@@ -1,0 +1,119 @@
+html body {
+  top: 0px;
+  left: 0px;
+  width: 1920px;
+  height: 1080px;
+  background: #f7f7f7 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
+  background-color: #f7f7f7;
+  padding: 30px 0 10px;
+  box-sizing: border-box;
+}
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.add-detail-text {
+  font: normal normal bold 24px/25px Roboto;
+  letter-spacing: 0px;
+  color: #42515f;
+  opacity: 1;
+}
+.add-button {
+  font: normal normal normal 22px/29px Roboto;
+  letter-spacing: 0px;
+  color: #fff;
+  opacity: 1;
+  background: #008cff 0% 0% no-repeat padding-box;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.add-button > img {
+  position: relative;
+  top: 4px;
+}
+.table-main {
+  /* top: 255px;
+left: 246px;
+width: 1351px;
+height: 22px; */
+
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 100px;
+  overflow: auto;
+}
+.table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  min-width: 800px;
+}
+td,
+th {
+  top: 285px;
+  left: 100px;
+  width: 1500px;
+  height: 40px;
+  background: #ffffff 1% 0% no-repeat;
+  border: 1px #e3e3e3 no-repeat padding-box;
+  border-radius: 1px;
+  opacity: 1;
+  text-align: center;
+  /* text-align: left; */
+  padding: 7px 16px;
+}
+
+th {
+  background: 0% 0% no-repeat padding-box;
+  font: normal normal 550 14px/21px Roboto;
+  letter-spacing: 0px;
+  color: #658292;
+  opacity: 2;
+  border: 0px solid #dddddd;
+  width: fit-content;
+  padding: 1.25%;
+  padding-bottom: 0%;
+}
+td {
+  background: color-white;
+  font: normal normal normal 14px/21px Roboto;
+  letter-spacing: 0px;
+  color: #3d3d3d;
+  opacity: 2;
+}
+td:first-child {
+  padding-left: 50px;
+}
+th:first-child {
+  padding-left: 50px;
+}
+td img {
+  cursor: pointer;
+}
+td img:last-child {
+  margin-left: auto;
+  margin-inline: 20px;
+}
+td:last-child {
+  padding-right: 0px;
+}
+th:last-child {
+  padding-right: 0px;
+}

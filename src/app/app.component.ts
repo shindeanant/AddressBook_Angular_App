@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpServicesService } from './service/http-services.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'addressbookservice-app';
+  constructor(private address: HttpServicesService){}
+
+  ngOnInit(){
+    this.address.getUser()
+    .subscribe( data => console.log(data)  );
+  }
 }
