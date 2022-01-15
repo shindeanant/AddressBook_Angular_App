@@ -1,44 +1,42 @@
 .header-content {
-    
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    background-color: #fff;
-    /* border-bottom: 1px solid greenyellow; */
-    /* top: 0px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  /* border-bottom: 1px solid greenyellow; */
+  /* top: 0px;
 left: 0px;
 width: 1500px;
 height: 900px; */
 }
 
 .logo-content {
-    display: flex;
-    flex-direction: row;
-    padding-left: 60px;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  padding-left: 60px;
+  cursor: pointer;
 }
 
 .address-book-text {
-    font-size: 15px;
-    text-transform: capitalize;
-    flex-direction: column;
-    display: flex;
-    letter-spacing: 0px;
-    padding-left: 10px;
-    font: normal normal bold 20px/25px Montserrat;
-    font-family: "Montserrat", sans-serif;
- 
+  font-size: 15px;
+  text-transform: capitalize;
+  flex-direction: column;
+  display: flex;
+  letter-spacing: 0px;
+  padding-left: 10px;
+  font: normal normal bold 20px/25px Montserrat;
+  font-family: "Montserrat", sans-serif;
 }
 .address-text {
-    color: blue;
+  color: blue;
 }
 .book-text {
-    color: black;
+  color: black;
 }
 
 .header-details {
-    margin-top: 10px;
-    margin-left: 350px;
-    font-size: 30px;
-    color: blue;
+  margin-top: 10px;
+  margin-left: 350px;
+  font-size: 30px;
+  color: blue;
 }
